@@ -27,7 +27,7 @@ async def lifespan(app):
         raise RuntimeError('Database startup failed; see the instructions above.') from None
     yield
 
-app = FastAPI(title='Torque Auto Parts', version='1.1.0', lifespan=lifespan)
+app = FastAPI(title='Auto Parts', version='1.1.0', lifespan=lifespan)
 app.add_middleware(CORSMiddleware, allow_origins=settings.cors_origins.split(","), allow_methods=['*'], allow_headers=['*'])
 @app.exception_handler(OperationalError)
 async def database_error(request, exc):

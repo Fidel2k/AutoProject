@@ -10,7 +10,7 @@ from sqlalchemy import select, insert, update, delete, and_, func
 from sqlalchemy.exc import IntegrityError
 from models import *
 
-app = FastAPI(title='Torque Auto Parts', version='1.0.0')
+app = FastAPI(title='Auto Parts', version='1.0.0')
 app.add_middleware(CORSMiddleware, allow_origins=os.getenv('CORS_ORIGINS','http://localhost:5173,http://localhost:8080').split(','), allow_methods=['*'], allow_headers=['*'])
 @app.exception_handler(IntegrityError)
 async def integrity_error(request, exc): return JSONResponse(status_code=409, content={'detail':'Duplicate value or invalid related record.'})

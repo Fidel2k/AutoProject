@@ -144,12 +144,12 @@ export default function App() {
         "Profile",
       ]
     : ["Catalog", "Cart", "Orders", "Profile"];
-  if (!ready) return <main>Loading Torque…</main>;
+  if (!ready) return <main>Loading AUTO STORE…</main>;
   return (
     <>
       <header>
         <a className="brand" href="#" onClick={() => setPage("Catalog")}>
-          <span className="brand-icon">T</span>TORQUE
+          <span className="brand-icon">T</span>AUTO PARTS
           <span className="brand-sub">AUTO PARTS</span>
         </a>
         <div className="header-right">
@@ -200,7 +200,7 @@ export default function App() {
         <main>
           <div className="page-heading">
             <div>
-              <div className="eyebrow">TORQUE / {page.toUpperCase()}</div>
+              <div className="eyebrow">AUTO STORE / {page.toUpperCase()}</div>
               <h1>
                 {page === "Catalog" ? "The right part. Ready to go." : page}
               </h1>
@@ -251,7 +251,7 @@ export default function App() {
           {!user && (
             <section className="login-panel">
               <div>
-                <div className="eyebrow">WELCOME TO TORQUE</div>
+                <div className="eyebrow">WELCOME TO AUTO STORE</div>
                 <h2>
                   {register ? "Create your account" : "Sign in to get started"}
                 </h2>

@@ -19,6 +19,32 @@ Stop both servers with Ctrl+C in the one running terminal. Cart contents are not
 
 ## Root commands
 
+### Install uv (required)
+
+This project uses `uv` to install Python dependencies and run the FastAPI
+backend. In PowerShell, check whether it is installed:
+
+```powershell
+uv --version
+```
+
+If PowerShell does not recognize `uv`, install it with:
+
+```powershell
+winget install --id=astral-sh.uv -e
+```
+
+Restart VS Code or open a new PowerShell window, then run `uv --version`
+again. Once it prints a version, run these commands from the project root:
+
+```powershell
+npm run install:all
+npm run dev:demo
+```
+
+For macOS, Linux, or other installation methods, see the
+[official uv installation guide](https://docs.astral.sh/uv/getting-started/installation/).
+
 | Command | Purpose |
 |---|---|
 | `npm run install:all` | Install frontend/backend dependencies and initialize local settings |

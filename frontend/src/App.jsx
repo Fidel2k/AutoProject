@@ -302,24 +302,6 @@ export default function App() {
           )}
           {page === "Catalog" && (
             <>
-              <section className="hero">
-                <div>
-                  <div className="eyebrow">BUILT FOR THE ROAD AHEAD</div>
-                  <h2>
-                    Keep your next
-                    <br />
-                    repair moving.
-                  </h2>
-                  <p>Shop new and rebuilt parts from your local branch.</p>
-                  <div className="hero-tags">
-                    <span>Live stock counts</span>
-                    <span>Two local branches + room to grow</span>
-                  </div>
-                </div>
-                <div className="wheel" aria-hidden="true">
-                  <div>T</div>
-                </div>
-              </section>
               <div className="toolbar">
                 <h2>
                   Explore the catalog{" "}
@@ -604,12 +586,6 @@ export default function App() {
               Sign in to access {page.toLowerCase()}.
             </section>
           )}
-          <footer>
-            TORQUE AUTO PARTS{" "}
-            <span>
-              CSCE 4350 · Local demonstration · Payments are simulated
-            </span>
-          </footer>
         </main>
       </div>
       {modal && (

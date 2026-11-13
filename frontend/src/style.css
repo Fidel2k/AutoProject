@@ -203,65 +203,6 @@ h3 {
   flex-shrink: 0;
   font-size: 11px;
 }
-.hero {
-  background: #173d33;
-  border-radius: 13px;
-  min-height: 270px;
-  color: #fff;
-  padding: 34px 42px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  overflow: hidden;
-}
-.hero .eyebrow {
-  color: #b9ccab;
-}
-.hero h2 {
-  font-size: 36px;
-  line-height: 1.2;
-  margin: 14px 0;
-}
-.hero p {
-  color: #bacdc2;
-  font-size: 13px;
-}
-.hero-tags {
-  display: flex;
-  gap: 16px;
-  font-size: 10px;
-  margin-top: 26px;
-  color: #d8e3d8;
-}
-.wheel {
-  width: 200px;
-  height: 200px;
-  border: 22px solid #476258;
-  border-radius: 50%;
-  box-shadow:
-    0 0 0 4px #668272,
-    inset 0 0 0 8px #8aa28e;
-  transform: rotate(-15deg);
-  margin: 0 35px;
-  background: repeating-conic-gradient(
-    #859a83 0 10deg,
-    #263f36 10deg 50deg,
-    #859a83 50deg 60deg
-  );
-  display: grid;
-  place-items: center;
-}
-.wheel div {
-  border: 9px solid #4b6556;
-  border-radius: 50%;
-  background: #183c31;
-  width: 70px;
-  height: 70px;
-  display: grid;
-  place-items: center;
-  font-size: 32px;
-  font-weight: 800;
-}
 .toolbar {
   display: flex;
   align-items: center;
@@ -475,16 +416,6 @@ td input {
   color: #73816d;
   text-align: center;
 }
-footer {
-  margin-top: 45px;
-  border-top: 1px solid #dfe5da;
-  padding-top: 22px;
-  font-size: 9px;
-  letter-spacing: 1px;
-  display: flex;
-  justify-content: space-between;
-  color: #84907e;
-}
 dialog {
   border: 0;
   border-radius: 12px;
@@ -510,11 +441,6 @@ dialog .toolbar {
   }
   .product-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-  .wheel {
-    margin: 0;
-    width: 150px;
-    height: 150px;
   }
   .layout {
     grid-template-columns: 180px 1fr;
@@ -560,15 +486,6 @@ dialog .toolbar {
   main {
     padding: 22px 16px;
   }
-  .hero {
-    padding: 25px;
-  }
-  .hero h2 {
-    font-size: 30px;
-  }
-  .wheel {
-    display: none;
-  }
   .product-grid {
     grid-template-columns: 1fr;
   }
@@ -587,13 +504,6 @@ dialog .toolbar {
   }
   form {
     grid-template-columns: 1fr;
-  }
-  footer {
-    gap: 15px;
-    line-height: 1.7;
-  }
-  .hero-tags {
-    flex-wrap: wrap;
   }
   .panel {
     padding: 18px;
